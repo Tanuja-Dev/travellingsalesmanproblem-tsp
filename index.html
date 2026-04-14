@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSP India - Smart Route Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-100 min-h-screen p-4 md:p-10">
+
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border border-slate-200">
+        <div class="bg-indigo-900 p-8 text-white flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-black tracking-tight">Route Optimizer</h1>
+                <p class="text-indigo-300 italic text-sm">Automated Coordinates & Costing</p>
+            </div>
+            <div class="text-right">
+                <span class="text-xs font-bold uppercase text-indigo-400 block">Currency</span>
+                <span class="text-xl font-bold text-white">INR (₹)</span>
+            </div>
+        </div>
+
+        <div class="p-6 md:p-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div class="space-y-6">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Starting City (Home)</label>
+                    <input type="text" id="startCity" value="Nagpur" class="w-full p-3 rounded-xl border focus:ring-2 focus:ring-indigo-500 outline-none font-semibold text-slate-700">
+                </div>
+
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Fuel/Rate (₹ per km)</label>
+                    <input type="number" id="fuelRate" value="12" class="w-full p-3 rounded-xl border focus:ring-2 focus:ring-indigo-500 outline-none font-semibold text-slate-700">
+                </div>
+
+                <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100">
+                    <label class="block text-xs font-bold text-indigo-700 uppercase mb-2">Add Destination</label>
+                    <input type="text" id="destInput" placeholder="e.g. Mumbai" class="w-full p-3 rounded-xl border border-indigo-200 outline-none focus:ring-2 focus:ring-indigo-500 mb-4">
+                    
+                    <div class="flex flex-col gap-2">
+                        <button id="addCityBtn" class="bg-indigo-600 text-white font-bold py-3 rounded-xl hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">
+                            Fetch & Add
+                        </button>
+                        <button id="clearAllBtn" class="bg-white text-red-500 border border-red-200 font-bold py-2 rounded-xl hover:bg-red-50 transition">
+                            Clear Everything
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-slate-900 p-6 rounded-2xl text-white">
+                        <p class="text-slate-400 text-xs font-bold uppercase mb-1">Total Distance</p>
+                        <h2 id="totalDist" class="text-3xl font-mono">0 km</h2>
+                    </div>
+                    <div class="bg-emerald-600 p-6 rounded-2xl text-white">
+                        <p class="text-emerald-100 text-xs font-bold uppercase mb-1">Total Estimated Cost</p>
+                        <h2 id="totalCost" class="text-3xl font-mono">₹ 0.00</h2>
+                    </div>
+                </div>
+
+                <div class="bg-white">
+                    <h3 class="font-bold text-slate-800 border-b pb-3 mb-4 flex items-center justify-between">
+                        <span>Trip Itinerary (Sorted by Cost)</span>
+                        <span id="loadingTxt" class="hidden text-xs text-indigo-600 animate-pulse">Searching Map...</span>
+                    </h3>
+                    <div id="itineraryContainer" class="space-y-3"></div>
+                </div>
+
+                <div id="complexityBox" class="hidden mt-6 p-5 bg-slate-100 rounded-2xl border border-slate-200 font-mono text-xs text-slate-600">
+                    <h4 class="font-bold text-slate-800 mb-2 uppercase">Complexity Logic Output</h4>
+                    <p id="complexityTime"></p>
+                    <p id="complexitySpace"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
