@@ -4,7 +4,7 @@ An interactive web platform designed to solve the **Travelling Salesman Problem 
 
 ## 💡 Project Idea
 
-In the world of logistics, inefficient routing leads to wasted fuel, higher costs, and delayed deliveries. [cite_start]**TSP India** bridges the gap between theoretical algorithm analysis and practical application[cite: 57, 58]. By integrating real-time geocoding, the project transforms the abstract "Nearest Neighbor" logic into a tangible tool that calculates actual trip itineraries and estimated costs in INR (₹).
+In the world of logistics, inefficient routing leads to wasted fuel, higher costs, and delayed deliveries. **TSP India** bridges the gap between theoretical algorithm analysis and practical application. By integrating real-time geocoding, the project transforms the abstract "Nearest Neighbor" logic into a tangible tool that calculates actual trip itineraries and estimated costs in INR (₹).
 
 ## 🚀 Features
 
@@ -17,10 +17,10 @@ In the world of logistics, inefficient routing leads to wasted fuel, higher cost
 ## 🧠 AI & Algorithmic Concepts Used
 
 ### Travelling Salesman Problem (TSP)
-[cite_start]The project tackles a classic **NP-hard** optimization problem: finding the shortest route that visits every city exactly once and returns to the start[cite: 19, 24].
+The project tackles a classic **NP-hard** optimization problem: finding the shortest route that visits every city exactly once and returns to the start.
 
 ### Greedy Approach (Nearest Neighbor)
-[cite_start]The core logic relies on a local optimal choice strategy[cite: 31, 89]. [cite_start]At every step, the algorithm selects the nearest unvisited city without backtracking, ensuring high speed even for larger inputs[cite: 34, 36, 101].
+The core logic relies on a local optimal choice strategy. At every step, the algorithm selects the nearest unvisited city without backtracking, ensuring high speed even for larger inputs.
 
 ### Haversine Formula
 Used to calculate the "Great Circle" distance between two points on a sphere (Earth) based on their coordinates, ensuring accurate mileage regardless of city distance.
@@ -44,8 +44,8 @@ Used to calculate the "Great Circle" distance between two points on a sphere (Ea
 | Case | Time Complexity | Result Quality |
 | :--- | :--- | :--- |
 | **Best Case** | O(n^2)| Optimal |
-| **Average Case** | $O(n^2)$ | Near Optimal |
-| **Worst Case** | $O(n^2)$ | Not Optimal |
+| **Average Case** | O(n^2) | Near Optimal |
+| **Worst Case** | O(n^2) | Not Optimal |
 
 ## 🎯 Objective
 To demonstrate the practical benefits of the Greedy Approach in logistics—specifically how O(n^2) time complexity allows for real-time route planning while maintaining a "near-optimal" quality that reduces fuel consumption and operational overhead.
@@ -53,7 +53,10 @@ To demonstrate the practical benefits of the Greedy Approach in logistics—spec
 ## 👩‍💻 Developed By
 
 **Tanuja Deshmukh** and **Sayali Gundawar** 
-⭐ Future Improvements 🧩 Informed Search Modules 📊 Performance Metrics 💾 Export Functionality
+**⭐ Future Improvements**
+   🧩 Informed Search Modules 
+   📊 Performance Metrics 
+   💾 Export Functionality
 
 ## Deployment
 
