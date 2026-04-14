@@ -8,11 +8,11 @@ In the world of logistics, inefficient routing leads to wasted fuel, higher cost
 
 ## 🚀 Features
 
-* 🎯 **Real-time Geocoding:** Automatically fetches GPS coordinates (Latitude/Longitude) for any city using the Nominatim API.
-* 🔍 **Greedy Route Optimization:** Implements the Nearest Neighbor algorithm to find a fast, near-optimal path.
-* 💰 **Dynamic Costing:** Live calculation of total trip expenses based on user-defined fuel rates per kilometer.
-* 📈 **Live Complexity Tracking:** Provides an on-screen breakdown of Time and Space complexity as the data set grows.
-* 🚫 **One-Click Reset:** "Clear Everything" functionality to quickly start fresh for new route planning.
+* 🎯 **Real-time Geocoding**
+* 🔍 **Greedy Route Optimization:**
+* 💰 **Dynamic Costing** 
+* 📈 **Live Complexity Tracking** 
+* 🚫 **One-Click Reset** 
 
 ## 🧠 AI & Algorithmic Concepts Used
 
@@ -54,9 +54,9 @@ To demonstrate the practical benefits of the Greedy Approach in logistics—spec
 
 **Tanuja Deshmukh** and **Sayali Gundawar** 
 **⭐ Future Improvements**
-   🧩 Informed Search Modules 
-   📊 Performance Metrics 
-   💾 Export Functionality
+ *  🧩 Informed Search Modules 
+ *  📊 Performance Metrics 
+  * 💾 Export Functionality
 
 ## Deployment
 
