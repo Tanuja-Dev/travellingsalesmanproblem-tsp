@@ -58,4 +58,4 @@ To demonstrate the practical benefits of the Greedy Approach in logistics—spec
 ## Deployment
 
 **Netlify**: https://travellingsalesmanproblem.netlify.app/
-**GitHub Pages**: 
+**GitHub Pages**: https://tanuja-dev.github.io/travellingsalesmanproblem-tsp/
